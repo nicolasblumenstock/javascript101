@@ -1,0 +1,120 @@
+<script type="text/javascript">
+//arrays = python lists
+// var student1 = "daniel";
+// var student3 = "chris";
+// var student2 = "merilee";
+// var student4 = "stephen";
+
+// var students = []
+// students = ["daniel", "merilee","chris","stephen"]
+// console.log(students)
+// // like python and pretty much every other language, the first index is zero
+// // any data type can go in any index
+// var nfcSouth = [
+// 	"falcons",
+// 	"panthers",
+// 	"saints",
+// 	"bucs"
+// ]
+// console.log(nfcSouth[0])
+// console.log(nfcSouth[4]) //undefined even if out of bounds/range
+
+// // append = push
+// nfcSouth.push("cowboys")
+// console.log(nfcSouth[4])
+// nfcSouth.pop(); //remove the final element
+// console.log(nfcSouth)
+// console.log(nfcSouth.slice(-2,-1))
+// nfcSouth.splice(1,0,"cowboys")
+// console.log(nfcSouth)
+
+// var atlTeams = [
+// 	"Falcons",
+// 	"Braves",
+// 	"Hawks",
+// 	"Thrashers"
+// ]
+
+// var newTeam = prompt("Please Enter the New Team in Town.")
+// // atlTeams.pop()
+// // atlTeams.push(newTeam)
+// atlTeams.splice(-1,1,newTeam)
+// console.log(atlTeams)
+// if (atlTeams[-1] == "Atl United") {
+// 	console.log("Correct team added!");
+// }
+
+
+// numbertNotGuessed = false;
+// while(numbertNotGuessed) {
+
+// }
+
+// #1
+// var d = new Date()
+
+var days = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"
+]
+var day = prompt("What day is it?")
+
+// var day = days[d.getDay()]
+// console.log(day)
+
+if (day.toUpperCase() == "SUNDAY" || day.toUpperCase() == "SATURDAY") {
+	console.log("Sleep in");
+}
+else {
+	console.log("Get to Work.")
+}
+
+
+// #2
+var userMonth = prompt("Name a Month by Number i.e. January is 1")
+var userYear = prompt ("Name a Year")
+var year = [
+	31,
+	28,
+	31,
+	30,
+	31,
+	30,
+	31,
+	31,
+	30,
+	31,
+	30,
+	31
+]
+
+if ((parseInt(userYear) % 4 == 0) && (userMonth == 2)) {
+	console.log("There was 29 Days in Feb")
+}
+
+else {
+	console.log("There was " + year[(parseInt(userMonth) - 1)] + " days in that month.")
+}
+
+
+// for loop
+// parameter 1 is init some variable to use as some counter
+// parameter 2 decide if loop should keep going
+// parameter 3 what to do at the end of each loop for each iteration
+for(i = 0; i < days.length; i++) {
+	if (day == days[i]){
+		if ((i == 0) || (i == 6)){
+			console.log("Sleep in.")
+		}
+		else {
+			console.log("Get to work.")
+		}
+	}
+}
+
+</script>
